@@ -1,3 +1,9 @@
+/*
+ * Needs Roger's libmaple core: https://github.com/rogerclarkmelbourne/Arduino_STM32
+ * And version 0.99 or later of https://github.com/arpruss/USBComposite_stm32f1/
+ * (The version bundled in Roger's core may be too old.)
+ */
+
 #include <USBComposite.h>
 #include "debounce.h"
 
