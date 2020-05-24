@@ -229,9 +229,10 @@ uint32 valueToPot(uint32 value) {
 void loop() {
   uint32 pots[2];
 
+  havePaddle = false;
   for (uint32 i = 0 ; i < 2; i++ ) {
     uint32 value = analog[i]->getValue();
-    if (value > 200) {
+    if (value > 4095/(paddleMaxResistance/paddleGroundResistance)/2) {
       havePaddle = true;
       digitalWrite(LED, 0);
     }
