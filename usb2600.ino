@@ -204,7 +204,7 @@ public:
         pinMode(analog[i]->port, INPUT_ANALOG);
     
       for (uint32 i = 0 ; i < sizeof(digital)/sizeof(*digital) ; i++) 
-        pinMode(digital[i]->pin, INPUT_PULLDOWN);    
+        pinMode(digital[i]->pin, INPUT_PULLUP);    
     }
 
     uint32 valueToPot(uint32 value) {
