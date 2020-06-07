@@ -276,7 +276,7 @@ public:
     }
     
     JoystickProfile(uint32 left, uint32 right, uint32 up, uint32 down, uint32 fire, uint32 pot1, uint32 pot2) :
-        joy(HID), analog1(pot1, true), analog2(pot2, false), joyLeft(left), joyRight(right), joyUp(up), joyDown(down), joyFire(fire) {}
+        joy(HID), analog1(pot1, true), analog2(pot2, false), joyLeft(left, LOW), joyRight(right, LOW), joyUp(up, LOW), joyDown(down, LOW), joyFire(fire, LOW) {}
 };
 
 JoystickProfile joy1(JOY1_LEFT,JOY1_RIGHT,JOY1_UP,JOY1_DOWN,JOY1_FIRE,JOY1_POT1,JOY1_POT2);
